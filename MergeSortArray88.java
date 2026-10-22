@@ -1,0 +1,19 @@
+import java.util.Arrays;
+public class MergeSortArray88{
+    //solution1-brute force T.C(O((m+n)log(m+n))) S.C(O(log(m+n))
+    
+
+
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        // Copy nums2 into the empty positions of nums1
+        for (int i = 0; i < n; i++) {
+            nums1[m + i] = nums2[i];
+        }
+
+        // Sort the merged array
+        Arrays.sort(nums1);
+    }
+}
+
+}
