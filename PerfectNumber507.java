@@ -1,0 +1,17 @@
+public class PerfectNumber507 {
+//solution1 T.C (O(n)) S.C(O(1))
+class Solution {
+    public boolean checkPerfectNumber(int num) {
+        int sum = 0;
+
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) {
+                sum += i;
+            }
+        }
+
+        return sum == num;
+    }
+}
+
+}
